@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('cubaExt3.view.main.Main', {
+Ext.define('App.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
@@ -13,9 +13,9 @@ Ext.define('cubaExt3.view.main.Main', {
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
 
-        'cubaExt3.view.main.MainController',
-        'cubaExt3.view.main.MainModel',
-        'cubaExt3.view.main.List'
+        'App.view.main.MainController',
+        'App.view.main.MainModel',
+        'App.view.main.List'
     ],
 
     controller: 'main',

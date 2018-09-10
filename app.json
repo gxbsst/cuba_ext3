@@ -1,6 +1,6 @@
 {
     "name": "cubaExt3",
-    "namespace": "cubaExt3",
+    "namespace": "App",
     "version": "1.0.0.0",
     "framework": "ext",
 
@@ -70,7 +70,7 @@
          * root namespace, change this to "". Doing so would change the mapping of
          * "cubaExt3.view.Foo" to "sass/src/cubaExt3/view/Foo.scss".
          */
-        "namespace": "cubaExt3",
+        "namespace": "App",
 
         /**
          * Generated sass source settings
@@ -515,6 +515,14 @@
         "classic": {
             "toolkit": "classic",
             "theme": "theme-triton",
+
+            "requires": [
+
+                "charts",
+
+                "ux"
+
+            ],
             "sass": {
                 "generated": {
                     "var": "classic/sass/save.scss",
@@ -526,6 +534,14 @@
         "modern": {
             "toolkit": "modern",
             "theme": "theme-material",
+
+            "requires": [
+
+                "charts",
+
+                "ux"
+
+            ],
             "sass": {
                 "generated": {
                     "var": "modern/sass/save.scss",

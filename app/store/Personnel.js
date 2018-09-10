@@ -1,4 +1,4 @@
-Ext.define('cubaExt3.store.Personnel', {
+Ext.define('App.store.Personnel', {
     extend: 'Ext.data.Store',
 
     alias: 'store.personnel',

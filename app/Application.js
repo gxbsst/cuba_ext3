@@ -3,10 +3,15 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('cubaExt3.Application', {
+Ext.define('App.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'cubaExt3',
+    name: 'App',
+
+    requires: [
+        'App.view.Viewport',
+        'App.view.main.Main'
+    ],
 
     quickTips: false,
     platformConfig: {
@@ -20,7 +25,9 @@ Ext.define('cubaExt3.Application', {
     ],
 
     launch: function () {
-        // TODO - Launch the application
+        Ext.create('App.view.Viewport',{
+            autoShow: 'true',
+        })
     },
 
     onAppUpdate: function () {
